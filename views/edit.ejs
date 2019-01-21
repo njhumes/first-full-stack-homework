@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+</head>
+<body>
+    <form action='/guitars/<%=guitar._id%>?_method=PUT' method='POST'>
+        <input type='text' name='brand' value='<%=guitar.brand%>'>
+        <input type='text' name='model' value='<%=guitar.model%>'>
+        <input type='text' name='year' value='<%=guitar.year%>'>
+        <button type='submit'>Submit Changes</button>
+    </form>
+</body>
+</html>

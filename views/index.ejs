@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+
+</head>
+
+<body>
+    <h1> Guitars </h1>
+    <% for(let i = 0; i < guitars.length; i++) {%>
+    <p><a href='guitars/<%=guitars[i]._id%>'>
+            <%=guitars[i].brand%></a></p>
+    <% }%>
+    <a href='guitars/new'><button>Create New Guitar</button></a>
+</body>
+
+</html>

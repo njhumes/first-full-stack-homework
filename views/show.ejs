@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+
+</head>
+<body>
+    <p>Brand: <%=guitar.brand%></p>
+    <p>Model: <%=guitar.model%></p>
+    <p>Year: <%=guitar.year%></p>
+    <p><a href='./<%=guitar._id%>/edit'>Edit</a></p>
+    <form action='/guitars/<%=guitar._id%>?_method=DELETE' method='POST'>
+        <button type='submit'>Delete Guitar</button>
+    </form>
+</body>
+</html>
